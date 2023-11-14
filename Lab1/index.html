@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Шифр Цезаря</title>
+    <meta charset="UTF-8">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <h1>Шифр Цезаря</h1>
+
+    <label for="plaintext">Введите текст</label>
+    <br><br>
+    <textarea type="text" id="plaintext" placeholder="Введите текст"></textarea>
+    <br><br>
+    <label for="shift">Введите сдвиг</label>
+    <br><br>
+    <input type="number" id="shift" placeholder="Введите сдвиг">
+    <br><br>
+
+    <button onclick="encrypt()">Зашифровать</button>
+    <button onclick="decrypt()">Расшифровать</button>
+    <button onclick="decryptWithoutKey()">Расшифровать без ключа</button>
+
+    <br><br>
+
+    <label for="ciphertext">Результат</label>
+    <br><br>
+    <textarea type="text" id="ciphertext" readonly></textarea>
+</body>
+</html>
