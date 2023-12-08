@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ГОСТ 28147-89</title>
+    
+</head>
+<body>
+    <h1>ГОСТ 28147-89</h1>
+    <div>
+        <h1>Ввод ключа длиной <span id="keyLengthSpan"></span> символов:</h1>
+        <input type="text" id="keyInput" value="0987654321qwerty">
+    </div>
+    <div>
+        <h1>Ввод сообщения:</h1>
+        <input type="text" id="messageInput" ><br><br>
+        <button id="encryptButton">Зашифровать</button><br><br>
+        <button id="decryptButton">Расшифровать вставленное</button>
+    </div>
+    <div>
+        <h1>Результат:</h1>
+        <input type="text" id="result" ><br><br>
+        <button id="decryptResultButton">Расшифровать результат</button>
+    </div>
+    <script src="gost.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
