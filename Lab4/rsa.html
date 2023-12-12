@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>RSA подпись</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>RSA подпись</h1>
+    
+    <label>Размер ключа: <input id="key-size" value="2048"> <button id="generate-keys">Сгенерировать ключи</button></label>
+    
+    <label>n: <textarea id="n-value" readonly></textarea></label>
+    <label>e: <textarea id="e-value" readonly></textarea></label>
+    <label>d: <textarea id="d-value" readonly></textarea></label>
+    
+    <h2>Подписать сообщение</h2>
+    
+    <label>Сообщение: <textarea id="message"></textarea></label>
+    
+    <button id="sign-message">Подписать сообщение</button>
+    
+    <label>Сообщение BigInt: <textarea id="message-bigint" readonly></textarea></label>
+    <label>RSA подпись: <textarea id="plain-rsa-signature" readonly></textarea></label>
+    
+    <h2>Верификация подписи</h2>
+    
+    <label>Сообщение: <textarea id="message-to-verify"></textarea></label>
+    
+    <label>RSA подпись: <textarea id="rsa-signature-to-verify"></textarea></label>
+    
+    <button id="verify-rsa-signature">Верифицировать</button>
+    
+    <label>Расшифрованное сообщение BigInt:<textarea id="decrypted-message-bigint" readonly></textarea></label>
+    <label>Расшифрованное сообщение:<textarea id="decrypted-message" readonly></textarea></label>
+    
+    <script src="https://rawcdn.githack.com/juanelas/bigint-crypto-utils/ace7d479eef105225d9a9b54a65a53dd9e7c5325/dist/bigint-crypto-utils-latest.browser.js"></script>
+    <script type="module" src="lib.js"></script>
+    <script type="module" src="main.js"></script>
+</body>
+</html>
